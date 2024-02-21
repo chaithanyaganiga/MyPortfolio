@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Chaithanya</h1>
+            <h2>Your Name</h2>
+            <p></p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>My Portfolio</h1>
+            </div>
+            <div class="social-icons">
+                
+                <a href="https://www.linkedin.com/in/chaithanya-ganiga-075666280" target="_blank">Linkdein</a>
+            </div>
+            <div class="menu-icon" onclick="toggleNav()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="ss">
+    <h1>Chaithanya</h1>
+    </div>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="message-box">
+                <p>A fresher who wishes to equip myself with additional skills and hone my leadership skills by working with a team
+                    that enables me to develop and work hard.
+                    </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li><a href="#">C</a></li>
+                <li><a href="#">C++</a></li>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JAVASCRIPT</a></li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <img src="invoice image.png" alt="Project 1">
+                <div class="project-info">
+                    <h3>Project 1</h3>
+                    <p>Real Bill Craft</p>
+                    <a href=https://drive.google.com/drive/folders/1O8QMeNG8PRI66ygqbRl6AQhBpOL21uXI?usp=sharing" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="portfolio image.jpg" alt="Project 2">
+                <div class="project-info">
+                    <h3>Project 2</h3>
+                    <p>My Portfolio</p>
+                    <a href="https://drive.google.com/drive/folders/1NlnhAs6J8VQEmKuQvR69K_HZV9QAmnUj?usp=sharing" target="_blank">View Project</a>
+                </div>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
