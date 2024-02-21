@@ -1,3 +1,6 @@
+/* style.css */
+
+/* Reset and general styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -8,43 +11,44 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
 }
+#projecticon{
+    height: 200px;
+    width: 200px;
+ }
 
-.hero {
-    background-color: #3498db;
-    color: #fff;
-    text-align: center;
-    padding: 80px 0;
-}
-
-.hero h1 {
-    margin: 0;
-}
-
+/* Header styles */
 .navbar {
     background-color: #3498db;
     color: #fff;
-    padding: 10px 0;
-    position: fixed;
+    /* padding: 10px 0; */
+    /* position: fixed; */
     width: 100%;
+    height: 100px;
     top: 0;
-    z-index: 1000;
+    /* z-index: 1000; */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-}
-
-.container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
+#linkedin{
+    padding: 0px;
+    margin: 0px;
+}
 .logo {
     font-size: 1.5em;
     font-weight: bold;
+    margin-right: 150px;
+}
+
+.social-icons {
+    align-items: center;
 }
 
 .menu-icon {
@@ -83,6 +87,7 @@ body {
     color: #f39c12;
 }
 
+/* Mobile styles */
 @media only screen and (max-width: 768px) {
     .nav-links {
         display: none;
@@ -107,19 +112,55 @@ body {
     .menu-icon {
         display: flex;
     }
+    .logo {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-right: 70px;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 300px;
+        gap: 100px;
+ 
+    }
+    #projecticon{
+       height: 100px;
+       width: 100px;
+    }
 }
 
+/* Hero section styles */
+.hero {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Section styles */
 .section {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
     padding: 40px 0;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .section h2 {
     color: #3498db;
 }
 
+/* About section styles */
 .message-box {
     background-color: #f9f9f9;
     border: 2px solid #e0e0e0;
@@ -133,6 +174,7 @@ body {
     margin: 0;
 }
 
+/* Skills section styles */
 ul {
     list-style: none;
     padding: 0;
@@ -158,6 +200,7 @@ ul li a:hover {
     background-color: #2980b9;
 }
 
+/* Project section styles */
 .project {
     display: flex;
     margin-bottom: 30px;
@@ -196,34 +239,21 @@ ul li a:hover {
 .project-info a:hover {
     background-color: #2980b9;
 }
+.forms{
+    display: grid;
+    grid-template-rows: auto ;
+}
+label,input,textarea,button{
+    margin: 5px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
 
+/* Contact section styles */
 footer {
     background-color: #3498db;
     color: #fff;
     text-align: center;
     padding: 20px 0;
-}
-.social-icons a{
-    align-items: center;
-}
-/* ... Your existing CSS code ... */
-
-.hero h1 {
-    font-size: 2.5em; /* Adjust the size as needed */
-    margin: 0;
-    color: #3498db; /* Adjust the color as needed */
-}
-
-.hero h2 {
-    font-size: 1.8em; /* Adjust the size as needed */
-    margin: 10px 0; /* Adjust the margin as needed */
-    color: #333; /* Adjust the color as needed */
-}
-
-/* ... Your existing CSS code ... */
-.ss{
-    text-align: center;
-    color: white;
-    background-color:black;
-    text-shadow:pink;
 }
